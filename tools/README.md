@@ -25,7 +25,10 @@ voice/rules stays the brand MD in Drive → Loft 331 Social/System/brand/Loft331
     git add <campaign> && git commit -m "Add <campaign> images" && git push origin HEAD:main
     # image URL for Buffer: https://raw.githubusercontent.com/drg44/loft331-social/main/<campaign>/posts/.../post-facebook.png
     # Buffer: org 6ab117352302590845670309, FB channel 6ab117c7ea19ca0bdea45dc7, tz America/Moncton (-03:00; -04:00 after Nov 1)
-    # create_post/edit_post with assets=[{image:{url,altText=headline}}], metadata.facebook.type="post", schedulingType automatic.
+    # HARD RULE: every post is a DRAFT (saveToDraft:true, mode customScheduled, dueAt in the future, schedulingType automatic).
+    # Dave approves in Buffer. NEVER shareNow, NEVER leave a post scheduled live. If the asked-for time has passed,
+    # move dueAt to the next sensible future time and keep it a draft.
+    # create_post/edit_post with assets=[{image:{url,altText=headline}}], metadata.facebook.type="post".
     # editing a scheduled post drops it to draft: re-send with saveToDraft:false + mode customScheduled + dueAt (must be in the future).
     # re-attaching a changed image: bump ?v=N on the URL or Buffer keeps the cached copy.
 
