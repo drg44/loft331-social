@@ -8,7 +8,7 @@ description: Make ONE on-brand Loft 331 image on demand — a link preview / OG 
 The brand is not negotiable. Every Loft 331 visual is produced by the render kit in this repo, from a real Loft 331 photo, with the real white wordmark, Fraunces headline, Lato subline and `LOFT331.CA`. If you find yourself writing CSS colours or drawing a logo, stop: you are off-brand.
 
 ## 0. Setup (30 seconds)
-- You must be inside a clone of `drg44/loft331-social` (this repo). In a cloud session it is at `/home/user/loft331-social`; on the Mac wherever Dave cloned it. If it is missing: `git clone --depth 1 https://github.com/drg44/loft331-social /home/user/loft331-social`.
+- The repo `drg44/loft331-social` must be on disk: Mac → `~/loft331-social` (installed by `tools/install-mac.sh`; run `git -C ~/loft331-social pull` first), cloud → `/home/user/loft331-social` (clone it if missing: `git clone --depth 1 https://github.com/drg44/loft331-social /home/user/loft331-social`). All paths below are relative to that folder; `cd` into it.
 - Sanity: `python3 tools/social/render.py --help` prints usage. Chrome/Chromium is found automatically (Mac Google Chrome, or `/opt/pw-browsers` in the cloud).
 
 ## 1. Read the rules first (every time)
