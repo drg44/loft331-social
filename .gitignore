@@ -1,0 +1,10 @@
+# private per-campaign working files (captions are approved in Buffer / the Drive calendar sheet)
+*/calendar.csv
+*/captions.md
+*/schedule.csv
+*/buffer-*.csv
+*/posts/*/caption.txt
+*/contact-sheet.png
+.stock-search/
+.DS_Store
+__pycache__/

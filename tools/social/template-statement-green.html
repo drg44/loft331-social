@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../loft331-brand.css">
+<style>
+  html,body{width:100vw;height:100vh;overflow:hidden;}
+  /* identical layout to template-spotlight — only the photo is replaced by a green gradient */
+  body{position:relative;
+    background:
+      radial-gradient(ellipse 90vw 70vw at 78% 12%, rgba(255,255,255,0.07), rgba(255,255,255,0) 60%),
+      linear-gradient(160deg, #03565b 0%, #013c3f 48%, #01282b 100%);}
+  .logo{position:absolute;top:8vw;left:10vw;height:9.3vw;display:block;}
+  /* no photo competing — typography carries the card: larger than photo posts, breaks to 2 lines */
+  .content{position:absolute;left:0;right:0;top:48vw;padding:0 10vw;}
+  .headline{font-size:8vw;line-height:1.08;color:var(--color-white);max-width:80vw;}
+  .subline{font-family:var(--font-sans);font-size:3vw;line-height:var(--leading-snug);color:var(--color-gray-200);margin-top:2.2vw;max-width:80vw;}
+  .site{position:absolute;left:10vw;bottom:14vw;font-family:var(--font-sans);font-size:2.1vw;color:var(--color-white);opacity:0.92;letter-spacing:var(--tracking-wide);text-transform:uppercase;}
+</style>
+</head>
+<body>
+  <img class="logo" src="data:image/png;base64,{{LOGO_B64}}" alt="Loft 331">
+  <div class="content">
+    <h1 class="headline">{{HEADLINE}}</h1>
+    <div class="subline">{{SUBLINE}}</div>
+  </div>
+  <div class="site">loft331.ca</div>
+</body>
+</html>
