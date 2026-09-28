@@ -233,7 +233,7 @@ Images are rendered from the calendar by Loft 331's own template (real photo or 
 
 Every Loft 331 visual must follow these rules:
 
-1. **Size:** square 1080×1080 for feed posts; 1080×1920 for Stories/Reels; 1200×630 for link previews.
+1. **Size:** 1080×905 for Facebook feed posts (never square or 4:5 on Facebook); 1080×1080 for Instagram feed; 1080×1920 for Stories/Reels; 1200×630 for link previews.
 2. **Background, one of two:**
    - **Real Loft 331 photo:** the photo source named in the calendar's Photo File column (Section 8 describes each one). Show that photo as the full background, exactly as it appears in the source, with a soft dark gradient at the top and bottom as in `reference-layout.png`. Never invent a different scene.
    - **Stock photo under the green wash** (Section 8 stock list) for subjects that aren't the space.
@@ -321,4 +321,4 @@ Rules:
 
 ## 12. How images get made
 
-Images are not generated in NotebookLM. Each calendar row's Headline, Subline, Photo File, and Style are rendered by Loft 331's own template into a finished 1080×1080 post (real photo or green card, real logo top-left, Fraunces headline, Lato subline, LOFT331.CA). Keep headlines within 2 lines of about 26 characters and sublines within 2 lines of about 55 characters so they fit the template.
+Images are not generated in NotebookLM. Each calendar row's Headline, Subline, Photo File, and Style are rendered by Loft 331's own template into a finished 1080×905 Facebook post (1080×1080 for Instagram) (real photo or green card, real logo top-left, Fraunces headline, Lato subline, LOFT331.CA). Keep headlines within 2 lines of about 26 characters and sublines within 2 lines of about 55 characters so they fit the template.

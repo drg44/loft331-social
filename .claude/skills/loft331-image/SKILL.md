@@ -19,7 +19,7 @@ The brand is not negotiable. Every Loft 331 visual is produced by the render kit
 ## 2. Decide four things, in this order
 | Decision | Rule |
 |---|---|
-| **Size** | link preview / OG image → `link` (1200×630) · Facebook feed → `facebook` (1080×905, default) · Instagram → `square` · story/reel cover → `story` · email header → `email` (1200×600) |
+| **Size** | Any social post for Facebook (incl. Buffer drafts) → **`facebook` (1080×905)**, always — never reuse a square/OG render for a Facebook post, re-render at `facebook` · link preview / OG image → `link` (1200×630) · Instagram → `square` · story/reel cover → `story` · email header → `email` (1200×600) |
 | **Template** | photo with strong subject → `template-spotlight.html` (neutral dark gradient). Stock photo or testimonial → `template-spotlight-green.html` (#013C3F wash). No usable photo → `template-statement-green.html`. Photo-top + green panel → `template-spotlight-green-panel.html`. Email → `template-email-banner.html` (fields EYEBROW, HEADLINE, SUBLINE, DETAIL). |
 | **Photo** | Pick from `tools/photos/<folder>/` by the §8 table + `_README.txt`. People line → people photo (`space-people/` or `loft-and-found/`). Room offer → `space-empty/`, `meeting-room/`, `call-room/`, `event-space/`. Never AI, never a file that is not in the folder. Check `tools/posted-log.csv`: no photo twice within 14 days for social posts (an OG image is exempt). |
 | **Copy** | Headline: **two lines, one sentence each, ≤ 26 chars per line**, sentence case, two-beat house style ("Upcoming events. / Hosted by our members."). Subline: ≤ 2 × 55 chars, say-it-out-loud plain speech. Prices only from the voice-guide fact sheet. Canadian spelling. |
@@ -45,7 +45,7 @@ Open the PNG with the Read tool. Fail and re-render if: a headline wraps to a th
 
 ## 5. Deliver
 - One-off image for the website/OG: commit it under `site-assets/<page>/` in this repo and give Dave the raw URL (`https://raw.githubusercontent.com/drg44/loft331-social/main/site-assets/...`) plus the PNG itself. Tell him where to set it (e.g. the page's `og:image`).
-- Social post outside the cycle: put it in `<YYYY-MM-DD>-<slug>/posts/01-<date>-<type>/post-<size>.png`, commit, push, and — only if Dave asked for Buffer — create a **draft** via the Buffer MCP (org `6ab117352302590845670309`, Facebook channel `6ab117c7ea19ca0bdea45dc7`, `saveToDraft: true`, `mode: customScheduled`, `dueAt` in the future at `-03:00` / `-04:00` after Nov 1). Never publish live. Append the row to `tools/posted-log.csv`.
+- Social post outside the cycle: render at `--size facebook` (1080×905) and put it in `<YYYY-MM-DD>-<slug>/posts/01-<date>-<type>/post-facebook.png`, commit, push, and — only if Dave asked for Buffer — create a **draft** via the Buffer MCP (org `6ab117352302590845670309`, Facebook channel `6ab117c7ea19ca0bdea45dc7`, `saveToDraft: true`, `mode: customScheduled`, `dueAt` in the future at `-03:00` / `-04:00` after Nov 1). Never publish live. Append the row to `tools/posted-log.csv`.
 
 ## Hard rules
 - Logo top-left, white, exactly as `tools/social/logo.png`. Never redrawn, recoloured, boxed, or moved.

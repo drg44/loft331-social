@@ -15,6 +15,7 @@ This repo is the **single home for everything Claude needs to make Loft 331 cont
 - Fraunces 600 headline, two lines, ≤ 26 chars each, sentence case; Lato subline ≤ 2 × 55; `LOFT331.CA` bottom-left.
 - Colours: brand green `#013C3F`, gradient partner `#1A5C44`, slate body `#334155`, white. No other colours. No borders, badges, icons, chips.
 - Prices/facts only from `references/voice-guide.md`. Canadian spelling. No gym. No "premium / sophisticated / excellence".
+- Facebook posts are always 1080×905 (`--size facebook`), never square. Square is Instagram only.
 - Buffer: drafts only (`saveToDraft: true`). Dave approves. Never `shareNow`.
 
 ## Layout
