@@ -54,7 +54,7 @@ Compare Drive (Photos subfolders, Inputs tabs/columns, Brief rows) against `refe
 Cards crop landscape photos to their middle. If a render is mostly dark or empty area, set that row's **Photo Position** and re-render. (2026-09-21 laundry post needed `left`.)
 
 ## Canadian holidays (Dave 2026-10-14)
-- Before building any cycle, list the Canadian / New Brunswick holidays inside it and the week after it, and theme the posts on and around them (Remembrance Day Nov 11, Christmas Eve, Christmas Day, Boxing Day, New Year's, Family Day, Good Friday, Victoria Day, Canada Day, NB Day, Labour Day, Thanksgiving). A statutory holiday morning gets a holiday post, never a sell.
+- Before building any cycle, list the Canadian / New Brunswick holidays inside it and the week after it, and theme the posts starting one to two weeks before each one, not just on the day (Remembrance Day Nov 11, Christmas Eve, Christmas Day, Boxing Day, New Year's, Family Day, Good Friday, Victoria Day, Canada Day, NB Day, Labour Day, Thanksgiving). A statutory holiday morning gets a holiday post, never a sell.
 - Exception: **no Halloween content** (2026). Flag any Loft & Found date that lands on a holiday (2026-11-11 is Remembrance Day) before building its track.
 
 ## Hard rules

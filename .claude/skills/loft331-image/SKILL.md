@@ -5,7 +5,7 @@ description: Make ONE on-brand Loft 331 image on demand — a link preview / OG 
 
 # Loft 331 — one-off image
 
-The brand is not negotiable. Every Loft 331 visual is produced by the render kit in this repo, from a real Loft 331 photo, with the real white wordmark, Fraunces headline, Lato subline and `LOFT331.CA`. If you find yourself writing CSS colours or drawing a logo, stop: you are off-brand.
+The brand is not negotiable. Every Loft 331 visual is produced by the render kit in this repo, from a real Loft 331 photo, with the real white wordmark, Fraunces headline, Lato subline and `Loft331.ca`. If you find yourself writing CSS colours or drawing a logo, stop: you are off-brand.
 
 ## 0. Setup (30 seconds)
 - The repo `drg44/loft331-social` must be on disk: Mac → `~/loft331-social` (installed by `tools/install-mac.sh`; run `git -C ~/loft331-social pull` first), cloud → `/home/user/loft331-social` (clone it if missing: `git clone --depth 1 https://github.com/drg44/loft331-social /home/user/loft331-social`). All paths below are relative to that folder; `cd` into it.
@@ -20,7 +20,7 @@ The brand is not negotiable. Every Loft 331 visual is produced by the render kit
 | Decision | Rule |
 |---|---|
 | **Size** | link preview / OG image → `link` (1200×630) · Facebook feed → `facebook` (1080×905, default) · Instagram → `square` · story/reel cover → `story` · email header → `email` (1200×600) |
-| **Template** | photo with strong subject → `template-spotlight.html` (neutral dark gradient). Stock photo or testimonial → `template-spotlight-green.html` (#013C3F wash). No usable photo → `template-statement-green.html`. Photo-top + green panel → `template-spotlight-green-panel.html`. Email → `template-email-banner.html` (fields EYEBROW, HEADLINE, SUBLINE, DETAIL). |
+| **Template** | photo with strong subject → `template-spotlight.html` (neutral dark gradient). Stock photo or testimonial → `template-spotlight-green.html` (#013C3F wash). No usable photo → `template-statement-green.html`. Third look (Dave 2026-10-14, neither green nor black) → `template-spotlight-slate.html` (#334155 slate wash). No panel layouts: text always sits on the photo. Email → `template-email-banner.html` (fields EYEBROW, HEADLINE, SUBLINE, DETAIL). |
 | **Photo** | Pick from `tools/photos/<folder>/` by the §8 table + `_README.txt`. People line → people photo (`space-people/` or `loft-and-found/`). Room offer → `space-empty/`, `meeting-room/`, `call-room/`, `event-space/`. Never AI, never a file that is not in the folder. Check `tools/posted-log.csv`: no photo twice within 14 days for social posts (an OG image is exempt). |
 | **Copy** | Headline: **two lines, one sentence each, ≤ 26 chars per line**, sentence case, two-beat house style ("Upcoming events. / Hosted by our members."). Subline: ≤ 2 × 55 chars, say-it-out-loud plain speech. Prices only from the voice-guide fact sheet. Canadian spelling. |
 

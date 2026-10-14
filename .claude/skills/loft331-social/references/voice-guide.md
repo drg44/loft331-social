@@ -27,7 +27,7 @@ Distilled from live site copy (loft331.ca source: `~/Documents/GitHub/loft331-st
 - Canadian spelling.
 
 ## NO white-background templates (Dave hard rule, 2026-07-22)
-Dave deleted the white quote + promo cards — he does NOT want white backgrounds. Only three approved templates remain, all photo/green: **spotlight**, **green-panel**, **statement-green**. For an offer/price post, put the number in the statement-green or spotlight headline/subline — do NOT recreate a white promo card.
+Dave deleted the white quote + promo cards — he does NOT want white backgrounds. Approved templates, all full-bleed photo with an overlay: **spotlight** (dark), **spotlight-green** (brand-green wash), **spotlight-slate** (slate #334155 wash, added 2026-10-14), **statement-green** (no photo). The green-panel layout was retired 2026-10-14 (Dave: text must sit on the photo, never in a panel). For an offer/price post, put the number in the statement-green or spotlight headline/subline — do NOT recreate a white promo card.
 
 ## Character limits (hard rules — keeps every post uniform; count per line, break lines yourself with wording, never shrink the font)
 - **Line-break rule (headlines):** every sentence gets its own line — insert `<br>` between sentences in the HEADLINE value. A sentence must NEVER wrap mid-line; if a single sentence exceeds its per-line limit, rewrite it shorter.
@@ -44,7 +44,7 @@ If copy can't fit the limit, rewrite the copy — the layout never bends.
 ## Template selection (only these three — no white backgrounds)
 - **template-spotlight.html** — anything with a great photo: spaces, amenities, events, member spotlights, AND offer/price posts that have a good photo. Fields: HEADLINE, SUBLINE, PHOTO (file:// URL) — no LABEL field. **Photo pool (check in this order): 1) `~/loft331-mgmt/photos/` — Dave's drop folder, event/custom photos go here; 2) `~/Documents/GitHub/loft331-static/assets/images/` — the site's stock photos (hero-*, gallery, spaces).** jpg/png/webp all work directly via file:// URL. **Photo rule:** prefer hero-grade shots with a strong subject in the middle of the frame (the hero-* images); avoid shots whose middle is empty floor/wall — the gap between logo and text reads as dead space.
 - **variants/statement-green.html** — no-photo statement card: brand lines, announcements, offers/prices without a photo, story/reel covers. Green gradient background, larger centered-left type. Fields: HEADLINE, SUBLINE.
-- **variants/spotlight-green-panel.html** — photo on top, centered text on a solid green panel below. Fields: HEADLINE, SUBLINE, PHOTO.
+- **template-spotlight-slate.html** — same layout as spotlight, slate (#334155) wash instead of green or black. Fields: HEADLINE, SUBLINE, PHOTO.
 
 Layout rules (Dave-approved 2026-07-22 vs his Canva mock — don't regress): logo always top-left (8vw top / 10vw left / 9.3vw tall), never bottom; 10vw side margins; spotlight has NO eyebrow label/rule — headline starts directly at 53vw, 6.5vw size; site URL bottom-left at 14vw off the bottom; no lines/rules on photo posts; overlay is a neutral black gradient (top + bottom mirrored), green only as accents. Default size: square.
 
