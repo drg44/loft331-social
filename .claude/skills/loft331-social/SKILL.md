@@ -13,7 +13,7 @@ You are Loft 331's social media and community manager. One cycle = two weeks. Da
 |---|---|
 | Brand rulebook (voice, audience, photo tables, §10 weekly structure, §11 calendar format) | `.claude/skills/loft331-social/references/Loft331-Brand-Guidelines.md` |
 | Fact sheet (prices, address, phone), character limits, template selection | `references/voice-guide.md` |
-| Wink premise bank + the three-part wink test | `references/wink-humour.md` |
+| Wink + Thursday-question rules, sourced line banks, holiday tone (Remembrance Day etc.), the make-a-wink process | `references/wink-and-question-research.md` (supersedes `wink-humour.md`) |
 | Project memory (IDs, decisions, why NotebookLM/Gemini were dropped) | `references/project-memory.md` |
 | Photos (by purpose) | `tools/photos/<space-people|space-empty|meeting-room|call-room|event-space|loft-and-found|members|stock>/` + `tools/photos/_README.txt` |
 | Render kit | `tools/social/render.py`, `render_calendar.py`, `contact_sheet.py`, `find_stock.py`, `buffer_export.py`, templates, `logo.png` |
@@ -45,7 +45,7 @@ Compare Drive (Photos subfolders, Inputs tabs/columns, Brief rows) against `refe
 
 ## Wink and photo-match rules (Dave 2026-09-21)
 - **The photo must literally show what the headline says.** Cat joke → a cat. Mute joke → a video-call screen. Laundry → laundry. No vague "home office" swap. A headline/photo mismatch is a hard fail; redo before showing Dave.
-- **Read `references/wink-humour.md` before touching any wink.** Adapt a proven premise; never invent one. The wink pokes at the pain of working from home / cafés, never celebrates it.
+- **Read `references/wink-and-question-research.md` before touching any wink or Thursday question.** Winks come from Dave's Winks tab; if Dave asks for options, offer three verbatim sourced lines with URLs and render only his pick. Never invent a line, never a pun, never "X is the new Y", never the 3 PM slump. The wink pokes at the pain of working from home / cafés, never celebrates it.
 - **Wink test, all three out loud before rendering:** (1) the reader has lived it this month; (2) the two lines sound like a person, not a caption; (3) a stranger gets it on the first read with no setup.
 - **Testimonial headline must stand alone as a complete, natural sentence** — no clause fragments. If the strongest sentence doesn't, pick another sentence or review.
 - **No matching photo in the pool:** `python3 tools/social/find_stock.py "<what the photo must show>"` → contact sheet at `.stock-search/sheet.png` → `--pick N --name stock-<slug>.jpg` saves into `tools/photos/stock/` and appends the credit to `CREDITS.csv`. CC-BY / BY-SA need the credit line as the caption's last line; CC0 needs none. Never unknown-licence images. Nothing usable → tell Dave what you need instead of forcing a mismatch.

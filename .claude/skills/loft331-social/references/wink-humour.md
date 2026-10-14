@@ -1,3 +1,5 @@
+> **Superseded 2026-10-14 by `wink-and-question-research.md`** (sourced research after Dave rejected Claude's winks again). Keep this file for the original premise list and the three-part test; use the new file's rules, banks and process.
+
 # Wink humour — what actually lands (researched 2026-09-21 after Dave rejected 6 winks in a row)
 
 Dave's verdict on my own jokes: "not how people talk", "I don't get it", "not coherent".
