@@ -57,6 +57,11 @@ Cards crop landscape photos to their middle. If a render is mostly dark or empty
 - Before building any cycle, list the Canadian / New Brunswick holidays inside it and the week after it, and theme the posts starting one to two weeks before each one, not just on the day (Remembrance Day Nov 11, Christmas Eve, Christmas Day, Boxing Day, New Year's, Family Day, Good Friday, Victoria Day, Canada Day, NB Day, Labour Day, Thanksgiving). A statutory holiday morning gets a holiday post, never a sell.
 - Exception: **no Halloween content** (2026). Flag any Loft & Found date that lands on a holiday (2026-11-11 is Remembrance Day) before building its track.
 
+## Reading web pages from the cloud session (2026-10-14)
+- Plain fetches are blocked by the environment's network policy unless the host is under Allowed domains (Edit environment → Network access). Dave allowed the research and stock hosts on 2026-10-14 (wework.com, unsplash.com, openverse, wikimedia, rd.com, huffpost.com, buzzfeed.com, boredpanda.com, legion.ca). A new host → ask Dave to add it, then retry.
+- Sites behind a Cloudflare "Just a moment" check (wework.com) refuse curl and WebFetch. Use `python3 tools/social/fetch_page.py "<url>"` (headless Chromium, same binary as render.py); it prints headings, teasers and link text in order.
+- `find_stock.py` works again in the cloud once the hosts are allowed.
+
 ## Hard rules
 - Never publish; drafts only. Dave approves in Buffer.
 - Real photos or approved stock only. Never invent a photo file name. Never AI images.
