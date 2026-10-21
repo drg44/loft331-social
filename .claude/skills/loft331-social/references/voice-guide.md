@@ -16,7 +16,7 @@ Distilled from live site copy (loft331.ca source: `~/Documents/GitHub/loft331-st
 - Coworking: **Flex Desk from $249/mo** (business-hours, any open desk) · **Dedicated Desk from $299/mo** (24/7, your reserved desk)
 - Day passes: **from $29 + tax** · 1, 5, or 10-day packs · no membership required
 - Meeting room (The Boardroom): **$49/hr, 2-hr minimum ($98)** · Mon–Fri 8am–8pm · 50" smart TV, screen-casting, whiteboard
-- Event space: **from $399 + tax** · 1,046 sq ft · up to 140 guests · 100" TV, podium + mic, speakers, dimmable lighting
+- Event space: **from $399 + tax** · 1,046 sq ft · up to 110 guests · 100" TV, podium + mic, speakers, dimmable lighting
 - Virtual office: professional business mailing address
 - Everywhere: fast fiber WiFi, free espresso, free parking, kitchen · 5.0★ from 100+ reviews
 
