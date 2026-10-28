@@ -61,6 +61,7 @@ Cards crop landscape photos to their middle. If a render is mostly dark or empty
 - Default template is `template-spotlight-vivid.html`: full-colour photo, light left-to-right fade behind the text. This is the look Dave approved on the podcast posts.
 - Do NOT use the slate wash or the all-over dark/black gradient for feed posts. Green wash only for an occasional brand post.
 - Pick vibrant photos: Unsplash (licence logged in tools/photos/stock/CREDITS.csv) for anything that isn't the space itself, real Loft photos for the space. Crop so the subject sits right of the text, never under it.
+- Every post is queued on all three channels: Facebook, Instagram and LinkedIn, same image, caption adjusted per network (Instagram: "link in bio" and up to 8 hashtags; LinkedIn: slightly more professional, 3 to 4 hashtags). Never Facebook only unless Dave says so.
 - Never put a price in an image. Prices go in the caption only.
 - Headlines are plain, complete sentences a person would say. No clever lines that need explaining.
 
