@@ -11,7 +11,7 @@ Sizes: facebook 1080x905 (default) · square 1080x1080 · story 1080x1920 · lin
 import argparse, glob, html, os, re, subprocess, sys, tempfile
 from pathlib import Path
 
-SIZES = {"facebook": (1080, 905), "square": (1080, 1080), "landscape": (1080, 864), "portrait": (1080, 1350), "story": (1080, 1920), "link": (1200, 630), "email": (1200, 600)}
+SIZES = {"fbcover": (820, 312), "facebook": (1080, 905), "square": (1080, 1080), "landscape": (1080, 864), "portrait": (1080, 1350), "story": (1080, 1920), "link": (1200, 630), "email": (1200, 600)}
 HERE = Path(__file__).resolve().parent
 
 def chrome():
