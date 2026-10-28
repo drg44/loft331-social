@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../loft331-brand.css">
+<style>
+  html,body{width:100vw;height:100vh;overflow:hidden;}
+  body{position:relative;background:#111;}
+  .photo{position:absolute;inset:0;background-image:url('{{PHOTO}}');background-size:cover;background-position:{{PHOTO_POS}};}
+  .overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.30) 30%,rgba(0,0,0,0) 50%);}
+  /* Facebook crops the sides on mobile: keep everything inside the centre 68% */
+  .logo{position:absolute;top:9vh;left:18vw;height:5.2vw;display:block;}
+  .headline{position:absolute;left:25.5vw;top:9vh;font-size:3.4vw;line-height:var(--leading-tight);color:var(--color-white);margin:0;}
+</style>
+</head>
+<body>
+  <div class="photo"></div>
+  <div class="overlay"></div>
+  <img class="logo" src="data:image/png;base64,{{LOGO_B64}}" alt="Loft 331">
+  <h1 class="headline">{{HEADLINE}}</h1>
+</body>
+</html>
