@@ -18,7 +18,8 @@
   --leading-normal:1.5;
 }
 @font-face{font-family:'Fraunces';src:url('fonts/fraunces.woff2') format('woff2');font-weight:100 900;font-display:block;}
-@font-face{font-family:'Lato';src:url('fonts/lato.woff2') format('woff2');font-weight:400 700;font-display:block;}
+@font-face{font-family:'Lato';src:url('fonts/lato.woff2') format('woff2');font-weight:400;font-display:block;}
+@font-face{font-family:'Lato';src:url('fonts/lato-bold.woff2') format('woff2');font-weight:700;font-display:block;}
 *{margin:0;padding:0;box-sizing:border-box;}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
 body{font-family:var(--font-sans);color:var(--color-gray-700);background:var(--color-white);line-height:var(--leading-normal);}

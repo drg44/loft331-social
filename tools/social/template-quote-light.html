@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../loft331-brand.css">
+<style>
+  /* Quote card on a light ground (Dave 2026-10-29, after the Basque Leadership reference):
+     big sans quote up top, bold emphasis, thin rule + name, headshot faded in bottom-left,
+     wordmark bottom-right in brand green. Light ground = brand neutrals, not pure white. */
+  html,body{width:100vw;height:100vh;overflow:hidden;}
+  body{position:relative;background:linear-gradient(160deg,var(--color-white) 0%,var(--color-gray-50) 45%,var(--color-beige-muted) 100%);}
+  .photo{position:absolute;left:-12vw;bottom:0;width:76vw;height:66vh;background-image:url('{{PHOTO}}');background-size:cover;background-position:{{PHOTO_POS}};
+    -webkit-mask-image:linear-gradient(to right,#000 58%,rgba(0,0,0,0) 100%),linear-gradient(to bottom,rgba(0,0,0,0) 0%,#000 22%);
+    -webkit-mask-composite:source-in;mask-image:linear-gradient(to right,#000 58%,rgba(0,0,0,0) 100%),linear-gradient(to bottom,rgba(0,0,0,0) 0%,#000 22%);mask-composite:intersect;}
+  .quote{position:absolute;left:8vw;right:8vw;top:9vh;text-align:center;font-family:var(--font-sans);font-weight:400;font-size:8.6vw;line-height:1.08;letter-spacing:var(--tracking-tight);color:var(--color-green-600);}
+  .quote b{font-weight:700;}
+  .rule{position:absolute;left:50%;transform:translateX(-50%);width:16vw;height:0.25vw;background:var(--color-green-600);opacity:0.45;}
+  .name{position:absolute;left:0;right:0;text-align:center;font-family:var(--font-sans);font-weight:400;font-size:2.6vw;letter-spacing:0.18em;color:var(--color-green-600);}
+  .logo{position:absolute;right:8vw;bottom:7vh;height:9.3vw;aspect-ratio:2266/1745;background:var(--color-green-600);
+    -webkit-mask:url('data:image/png;base64,{{LOGO_B64}}') no-repeat center/contain;mask:url('data:image/png;base64,{{LOGO_B64}}') no-repeat center/contain;}
+</style>
+</head>
+<body>
+  <div class="photo"></div>
+  <div class="quote"><b>&ldquo;</b>{{QUOTE_A}} <b>{{QUOTE_B}}&rdquo;</b></div>
+  <div class="rule" style="top:{{RULE_TOP}}"></div>
+  <div class="name" style="top:calc({{RULE_TOP}} + 2.6vw)">{{NAME}}</div>
+  <div class="logo"></div>
+</body>
+</html>
