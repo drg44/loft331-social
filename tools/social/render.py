@@ -15,7 +15,7 @@ SIZES = {"facebook": (1080, 905), "square": (1080, 1080), "landscape": (1080, 86
 HERE = Path(__file__).resolve().parent
 
 def chrome():
-    for c in ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"] + sorted(glob.glob("/opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell")) + sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux/chrome")) + ["/usr/bin/chromium", "/usr/bin/google-chrome"]:
+    for c in ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"] + sorted(glob.glob("/opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell")) + sorted(glob.glob("/opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell")) + sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux/chrome")) + sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux64/chrome")) + ["/usr/bin/chromium", "/usr/bin/google-chrome"]:
         if os.path.exists(c):
             return c
     sys.exit("no Chrome/Chromium found")
