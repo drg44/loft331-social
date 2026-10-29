@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="../loft331-brand.css">
 <style>
   /* Quote card on a light ground (Dave 2026-10-29, after the Basque Leadership reference):
-     logo top-left per brand (brand green because the ground is light), left-aligned Lato quote
-     with bold emphasis, thin rule + name, cut-out headshot in the bottom-left corner with a soft
+     logo top-left per brand (brand green because the ground is light), left-aligned Fraunces 600 quote (brand headline type)
+     with a heavier Fraunces 800 emphasis; name in Lato, thin rule + name, cut-out headshot in the bottom-left corner with a soft
      backdrop glow. Ground = brand neutrals (white → gray-50 → beige), never flat white.
      PHOTO must be a cut-out PNG (transparent background). */
   html,body{width:100vw;height:100vh;overflow:hidden;}
@@ -15,8 +15,8 @@
   .photo{position:absolute;left:{{PHOTO_LEFT}};bottom:0;height:{{PHOTO_H}};display:block;}
   .logo{position:absolute;top:7vh;left:10vw;height:9.3vw;aspect-ratio:2266/1745;background:var(--color-green-600);
     -webkit-mask:url('data:image/png;base64,{{LOGO_B64}}') no-repeat center/contain;mask:url('data:image/png;base64,{{LOGO_B64}}') no-repeat center/contain;}
-  .quote{position:absolute;left:10vw;right:8vw;top:calc(7vh + 9.3vw + 3.5vh);text-align:left;font-family:var(--font-sans);font-weight:400;font-size:8.2vw;line-height:1.08;letter-spacing:var(--tracking-tight);color:var(--color-green-600);}
-  .quote b{font-weight:700;}
+  .quote{position:absolute;left:10vw;right:8vw;top:calc(7vh + 9.3vw + 3.5vh);text-align:left;font-family:var(--font-display);font-weight:600;font-size:8.2vw;line-height:1.0;letter-spacing:var(--tracking-tighter);color:var(--color-green-600);}
+  .quote b{font-weight:800;}
   .rule{position:absolute;left:10vw;width:16vw;height:0.25vw;background:var(--color-green-600);opacity:0.45;}
   .name{position:absolute;left:10vw;text-align:left;font-family:var(--font-sans);font-weight:400;font-size:2.5vw;letter-spacing:0.18em;color:var(--color-green-600);}
 </style>
