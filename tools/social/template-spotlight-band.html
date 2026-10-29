@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../loft331-brand.css">
+<style>
+  html,body{width:100vw;height:100vh;overflow:hidden;}
+  body{position:relative;background:#111;}
+  .photo{position:absolute;left:0;right:0;top:0;height:75vh;background-image:url('{{PHOTO}}');background-size:cover;background-position:{{PHOTO_POS}};}
+  .overlay{position:absolute;left:0;right:0;top:0;height:75vh;background:
+    linear-gradient(to bottom,rgba(0,0,0,0.62) 0%,rgba(0,0,0,0.5) 20%,rgba(0,0,0,0.48) 35%,rgba(0,0,0,0.55) 50%,rgba(0,0,0,0.6) 65%,rgba(0,0,0,0.7) 100%),
+    rgba(0,0,0,0.16);}
+  .logo{position:absolute;top:7vh;left:10vw;height:9.3vw;display:block;}
+  .content{position:absolute;left:0;right:0;top:calc(7vh + 9.3vw);bottom:calc(25vh + 4vw);display:flex;flex-direction:column;justify-content:center;padding:0 10vw;}
+  .headline{font-size:6.5vw;line-height:1.1;color:var(--color-white);max-width:80vw;}
+  .subline{font-family:var(--font-sans);font-size:2.6vw;line-height:var(--leading-snug);color:var(--color-gray-200);margin-top:3.5vw;max-width:80vw;}
+  .band{position:absolute;left:0;right:0;bottom:0;height:25vh;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 10vw;}
+  .site{line-height:1.2;font-family:var(--font-sans);font-size:2.1vw;color:#334155;letter-spacing:var(--tracking-wide);}
+  .partner{height:{{PARTNER_H}};display:block;}
+</style>
+</head>
+<body>
+  <div class="photo"></div>
+  <div class="overlay"></div>
+  <img class="logo" src="data:image/png;base64,{{LOGO_B64}}" alt="Loft 331">
+  <div class="content">
+    <h1 class="headline">{{HEADLINE}}</h1>
+    <div class="subline">{{SUBLINE}}</div>
+  </div>
+  <div class="band">
+    <div class="site">Loft331.ca</div>
+    <img class="partner" src="data:image/png;base64,{{PARTNER_B64}}" alt="Partner">
+  </div>
+</body>
+</html>

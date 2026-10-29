@@ -9,7 +9,7 @@ date,channel,post_type,headline,photo_file,campaign
 2026-09-30,facebook,Offer,Need a private boardroom? Book by the block.,meeting-hero-boardroom.jpg,2026-09-21-facebook-14-day
 2026-10-01,facebook,Space,Need a desk for the day?,hero-coworking.jpg,2026-09-21-facebook-14-day
 2026-10-02,facebook,Proof,"100+ five-star reviews. Thank you, Moncton.",loft_and_found_event_people.jpg,2026-09-21-facebook-14-day
-2026-09-29,facebook,Testimonial,"More than a place to work. / It feels like a community.",loft_331_coworking_1.jpg,2026-09-28-cycle
+2026-09-29,facebook,Testimonial,More than a place to work. / It feels like a community.,loft_331_coworking_1.jpg,2026-09-28-cycle
 2026-09-29,facebook,Loft & Found,Loft & Found. Moncton's networking night.,lf-crowd-wide.jpg,2026-09-28-cycle
 2026-09-30,facebook,Offer,Your own desk. Your name on it.,desks-plant-wall.jpg,2026-09-28-cycle
 2026-10-01,facebook,Question,First thing you do when you sit down to work?,members-desks-laptop-fg.png,2026-09-28-cycle
@@ -25,7 +25,47 @@ date,channel,post_type,headline,photo_file,campaign
 2026-10-13,facebook,Testimonial,A great alternative / to working from home.,members-desks-round-table.jpg,2026-10-12-cycle
 2026-10-13,facebook,Loft & Found,Loft & Found is tomorrow. / Doors open at 6:00 PM.,lf-mingling-1.jpg,2026-10-12-cycle
 2026-10-14,facebook,Offer,Room for up to 140 guests. / Book it from $399 + tax.,space-event.jpg,2026-10-12-cycle
-2026-10-14,facebook,Loft & Found,Loft & Found is tonight. / See you at 6:00 PM.,lf-crowd-backs-portrait.jpg,2026-10-12-cycle
+2026-10-14,facebook,Loft & Found,Loft & Found is tonight. / Masquerade edition.,stock-masquerade-mask.jpg,2026-10-14-masquerade
 2026-10-15,facebook,Question,Where do you take calls / when you work from home?,stock-video-call.jpg,2026-10-12-cycle
 2026-10-15,facebook,Loft & Found,"Thank you, Moncton. / Next one: November 11.",lf-rotary-banner.jpg,2026-10-12-cycle
 2026-10-16,facebook,Soft sell,The coffee's free. / So is the parking.,kitchen-counter.jpg,2026-10-12-cycle
+2026-10-19,facebook,Wink,Woke up five minutes / before my first call.,stock-bed-laptop.jpg,2026-10-12-cycle
+2026-10-20,facebook,Testimonial,My new favourite spot / in Moncton for working.,members-lounge-couch.jpg,2026-10-12-cycle
+2026-10-22,facebook,Offer,Flex Membership. / Come in day or night.,window-desk-row.jpg,2026-10-12-cycle
+2026-10-19,facebook,Coming soon,Podcast studio rentals. / Coming soon to Loft 331.,stock-podcast-colour-mic.jpg,2026-10-22-podcast-teaser
+2026-12-14,facebook,Local,Shop local this Christmas. / Start with this room.,loft_331_coworking_3.jpg,2026-12-14-demo
+2026-12-15,facebook,Testimonial,"A beautiful space, / and super accommodating.",coworking-hero-lounge.jpg,2026-12-14-demo
+2026-12-15,facebook,Loft & Found,That was December's. / See you January 13.,lf-networking-1.jpg,2026-12-14-demo
+2026-12-16,facebook,Offer,"Day passes from $29 + tax. / Give one day, or ten.",day-passes-hero.jpg,2026-12-14-demo
+2026-12-17,facebook,Question,When's your last work day / before the holidays?,stock-notebook-plan.jpg,2026-12-14-demo
+2026-12-17,facebook,Loft & Found,"Loft & Found, January 13. / First one of the new year.",lf-networking-2.jpg,2026-12-14-demo
+2026-12-18,facebook,Soft sell,"Finish the year here. / Quiet desks, real coffee.",window-desks-lounge.jpg,2026-12-14-demo
+2026-10-15,facebook,Loft & Found,Thank you for coming. / What a night that was.,lf-crowd-wide.jpg,2026-10-15-masquerade-thanks
+2026-10-19,instagram,Coming soon,Podcast studio rentals. / Coming soon to Loft 331.,stock-podcast-vintage-mic.jpg,2026-10-22-podcast-teaser
+2026-10-19,linkedin,Coming soon,Podcast studio rentals. / Coming soon to Loft 331.,stock-podcast-vintage-mic.jpg,2026-10-22-podcast-teaser
+2026-10-22,facebook,Coming soon,Podcast studio rentals. / Coming soon to Loft 331.,stock-podcast-vintage-mic.jpg,2026-10-22-podcast-teaser
+2026-10-22,instagram,Coming soon,Podcast studio rentals. / Coming soon to Loft 331.,stock-podcast-vintage-mic.jpg,2026-10-22-podcast-teaser
+2026-10-22,linkedin,Coming soon,Podcast studio rentals. / Coming soon to Loft 331.,stock-podcast-vintage-mic.jpg,2026-10-22-podcast-teaser
+2026-10-23,facebook,Offer,Room for up to 110 guests. / Book the event space.,space-event.jpg,2026-10-12-cycle
+2026-10-21,facebook,Event,SmallBizRIOT is tomorrow. / A few tickets left.,event-workshop-audience.jpg,2026-10-21-smallbizriot
+2026-10-28,facebook,Wink,Prefer to work quietly? / There's a space for that.,stock-headphones-yellow.jpg,2026-10-29-week
+2026-10-28,instagram,Wink,Prefer to work quietly? / There's a space for that.,stock-headphones-yellow.jpg,2026-10-29-week
+2026-10-28,linkedin,Wink,Prefer to work quietly? / There's a space for that.,stock-headphones-yellow.jpg,2026-10-29-week
+2026-10-29,facebook,Soft sell,Video call coming up? / Take it in a call room.,stock-laptop-video-call.jpg,2026-10-29-week
+2026-10-29,instagram,Soft sell,Video call coming up? / Take it in a call room.,stock-laptop-video-call.jpg,2026-10-29-week
+2026-10-29,linkedin,Soft sell,Video call coming up? / Take it in a call room.,stock-laptop-video-call.jpg,2026-10-29-week
+2026-10-30,facebook,Offer,Make Loft 331 yours. / Become a member.,members-desks-lounge.jpg,2026-10-29-week
+2026-10-30,instagram,Offer,Make Loft 331 yours. / Become a member.,members-desks-lounge.jpg,2026-10-29-week
+2026-10-30,linkedin,Offer,Make Loft 331 yours. / Become a member.,members-desks-lounge.jpg,2026-10-29-week
+2026-10-31,facebook,Testimonial,"Great spot, great people.",members-desks-round-table.jpg,2026-10-29-week
+2026-10-31,instagram,Testimonial,"Great spot, great people.",members-desks-round-table.jpg,2026-10-29-week
+2026-10-31,linkedin,Testimonial,"Great spot, great people.",members-desks-round-table.jpg,2026-10-29-week
+2026-11-02,facebook,Idea,Plan your week. / Start with three tasks.,stock-november-planner.jpg,2026-10-29-week
+2026-11-02,instagram,Idea,Plan your week. / Start with three tasks.,stock-november-planner.jpg,2026-10-29-week
+2026-11-02,linkedin,Idea,Plan your week. / Start with three tasks.,stock-november-planner.jpg,2026-10-29-week
+2026-11-03,facebook,Question,An hour earlier? / Or an hour later?,stock-sunrise-field.jpg,2026-10-29-week
+2026-11-03,instagram,Question,An hour earlier? / Or an hour later?,stock-sunrise-field.jpg,2026-10-29-week
+2026-11-03,linkedin,Question,An hour earlier? / Or an hour later?,stock-sunrise-field.jpg,2026-10-29-week
+2026-11-04,facebook,Offer,Big meeting coming up? / Book the Boardroom.,meeting-hero-boardroom.jpg,2026-10-29-week
+2026-11-04,instagram,Offer,Big meeting coming up? / Book the Boardroom.,meeting-hero-boardroom.jpg,2026-10-29-week
+2026-11-04,linkedin,Offer,Big meeting coming up? / Book the Boardroom.,meeting-hero-boardroom.jpg,2026-10-29-week

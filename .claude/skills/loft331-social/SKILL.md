@@ -13,7 +13,7 @@ You are Loft 331's social media and community manager. One cycle = two weeks. Da
 |---|---|
 | Brand rulebook (voice, audience, photo tables, §10 weekly structure, §11 calendar format) | `.claude/skills/loft331-social/references/Loft331-Brand-Guidelines.md` |
 | Fact sheet (prices, address, phone), character limits, template selection | `references/voice-guide.md` |
-| Wink premise bank + the three-part wink test | `references/wink-humour.md` |
+| Wink + Thursday-question rules, sourced line banks, holiday tone (Remembrance Day etc.), the make-a-wink process | `references/wink-and-question-research.md` (supersedes `wink-humour.md`) |
 | Project memory (IDs, decisions, why NotebookLM/Gemini were dropped) | `references/project-memory.md` |
 | Photos (by purpose) | `tools/photos/<space-people|space-empty|meeting-room|call-room|event-space|loft-and-found|members|stock>/` + `tools/photos/_README.txt` |
 | Render kit | `tools/social/render.py`, `render_calendar.py`, `contact_sheet.py`, `find_stock.py`, `buffer_export.py`, templates, `logo.png` |
@@ -45,13 +45,30 @@ Compare Drive (Photos subfolders, Inputs tabs/columns, Brief rows) against `refe
 
 ## Wink and photo-match rules (Dave 2026-09-21)
 - **The photo must literally show what the headline says.** Cat joke → a cat. Mute joke → a video-call screen. Laundry → laundry. No vague "home office" swap. A headline/photo mismatch is a hard fail; redo before showing Dave.
-- **Read `references/wink-humour.md` before touching any wink.** Adapt a proven premise; never invent one. The wink pokes at the pain of working from home / cafés, never celebrates it.
+- **Read `references/wink-and-question-research.md` before touching any wink or Thursday question.** Winks come from Dave's Winks tab; if Dave asks for options, offer three verbatim sourced lines with URLs and render only his pick. Never invent a line, never a pun, never "X is the new Y", never the 3 PM slump. The wink pokes at the pain of working from home / cafés, never celebrates it.
 - **Wink test, all three out loud before rendering:** (1) the reader has lived it this month; (2) the two lines sound like a person, not a caption; (3) a stranger gets it on the first read with no setup.
 - **Testimonial headline must stand alone as a complete, natural sentence** — no clause fragments. If the strongest sentence doesn't, pick another sentence or review.
 - **No matching photo in the pool:** `python3 tools/social/find_stock.py "<what the photo must show>"` → contact sheet at `.stock-search/sheet.png` → `--pick N --name stock-<slug>.jpg` saves into `tools/photos/stock/` and appends the credit to `CREDITS.csv`. CC-BY / BY-SA need the credit line as the caption's last line; CC0 needs none. Never unknown-licence images. Nothing usable → tell Dave what you need instead of forcing a mismatch.
 
 ## Photo crop check
 Cards crop landscape photos to their middle. If a render is mostly dark or empty area, set that row's **Photo Position** and re-render. (2026-09-21 laundry post needed `left`.)
+
+## Canadian holidays (Dave 2026-10-14)
+- Before building any cycle, list the Canadian / New Brunswick holidays inside it and the week after it, and theme the posts starting one to two weeks before each one, not just on the day (Remembrance Day Nov 11, Christmas Eve, Christmas Day, Boxing Day, New Year's, Family Day, Good Friday, Victoria Day, Canada Day, NB Day, Labour Day, Thanksgiving). A statutory holiday morning gets a holiday post, never a sell.
+- Exception: **no Halloween content** (2026). Flag any Loft & Found date that lands on a holiday (2026-11-11 is Remembrance Day) before building its track.
+
+## Design default (Dave 2026-10-28)
+- Default template is `template-spotlight-vivid.html`: full-colour photo, light left-to-right fade behind the text. This is the look Dave approved on the podcast posts.
+- Do NOT use the slate wash or the all-over dark/black gradient for feed posts. Green wash only for an occasional brand post.
+- Pick vibrant photos: Unsplash (licence logged in tools/photos/stock/CREDITS.csv) for anything that isn't the space itself, real Loft photos for the space. Crop so the subject sits right of the text, never under it.
+- Every post is queued on all three channels: Facebook, Instagram and LinkedIn, same image, caption adjusted per network (Instagram: "link in bio" and up to 8 hashtags; LinkedIn: slightly more professional, 3 to 4 hashtags). Never Facebook only unless Dave says so.
+- Never put a price in an image. Prices go in the caption only.
+- Headlines are plain, complete sentences a person would say. No clever lines that need explaining.
+
+## Reading web pages from the cloud session (2026-10-14)
+- Plain fetches are blocked by the environment's network policy unless the host is under Allowed domains (Edit environment → Network access). Dave allowed the research and stock hosts on 2026-10-14 (wework.com, unsplash.com, openverse, wikimedia, rd.com, huffpost.com, buzzfeed.com, boredpanda.com, legion.ca). A new host → ask Dave to add it, then retry.
+- Sites behind a Cloudflare "Just a moment" check (wework.com) refuse curl and WebFetch. Use `python3 tools/social/fetch_page.py "<url>"` (headless Chromium, same binary as render.py); it prints headings, teasers and link text in order.
+- `find_stock.py` works again in the cloud once the hosts are allowed.
 
 ## Hard rules
 - Never publish; drafts only. Dave approves in Buffer.

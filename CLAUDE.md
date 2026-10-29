@@ -12,7 +12,7 @@ This repo is the **single home for everything Claude needs to make Loft 331 cont
 ## Non-negotiables (from the brand guidelines)
 - Real Loft 331 photo (or the listed stock under the green wash). Never AI imagery. Never a plain white background.
 - White wordmark top-left, exactly `tools/social/logo.png`. Never redrawn or recoloured.
-- Fraunces 600 headline, two lines, ≤ 26 chars each, sentence case; Lato subline ≤ 2 × 55; `LOFT331.CA` bottom-left.
+- Fraunces 600 headline, two lines, ≤ 26 chars each, sentence case; Lato subline ≤ 2 × 55; `Loft331.ca` bottom-left (capital L, lowercase .ca, never all-caps).
 - Colours: brand green `#013C3F`, gradient partner `#1A5C44`, slate body `#334155`, white. No other colours. No borders, badges, icons, chips.
 - Prices/facts only from `references/voice-guide.md`. Canadian spelling. No gym. No "premium / sophisticated / excellence".
 - Buffer: drafts only (`saveToDraft: true`). Dave approves. Never `shareNow`.

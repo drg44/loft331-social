@@ -243,7 +243,7 @@ Every Loft 331 visual must follow these rules:
 3. **Logo:** reproduce the logo exactly as it appears in the source `Loft331-Logo-White.png`, in the **top-left corner** (Section 7).
 4. **Headline:** Fraunces SemiBold (600), letter spacing −0.065em, line height 1.0, white, left-aligned, sentence case. The headline block sits in the lower-left, starting just below the vertical centre (as in `reference-layout.png`). Maximum 2 lines, about 26 characters per line, one sentence per line.
 5. **Subline:** Lato Regular, white, directly below the headline. **Say-it-out-loud test:** plain speech only, something you'd say to a person across a table. No personification, no writer-cute lines ("your back files a complaint" fails; "then it's just a couch again" passes). **Maximum 2 lines, 55 characters per line.** Every post has one; it comes from the calendar's Subline column, never from the caption.
-6. **Website:** "LOFT331.CA" small, uppercase, letter spacing +0.05em, Lato, white, bottom-left.
+6. **Website:** "Loft331.ca" small, capital L and lowercase .ca (never all-caps), letter spacing +0.05em, Lato, white, bottom-left.
 7. **Margins:** about 10% on the left and right.
 8. **No extras:** no borders, lines, badges, icons, stickers, or shapes.
 9. **Spelling:** every word must be spelled exactly as written.
@@ -321,4 +321,4 @@ Rules:
 
 ## 12. How images get made
 
-Images are not generated in NotebookLM. Each calendar row's Headline, Subline, Photo File, and Style are rendered by Loft 331's own template into a finished 1080×1080 post (real photo or green card, real logo top-left, Fraunces headline, Lato subline, LOFT331.CA). Keep headlines within 2 lines of about 26 characters and sublines within 2 lines of about 55 characters so they fit the template.
+Images are not generated in NotebookLM. Each calendar row's Headline, Subline, Photo File, and Style are rendered by Loft 331's own template into a finished 1080×1080 post (real photo or green card, real logo top-left, Fraunces headline, Lato subline, Loft331.ca). Keep headlines within 2 lines of about 26 characters and sublines within 2 lines of about 55 characters so they fit the template.
