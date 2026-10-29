@@ -15,7 +15,7 @@ SIZES = {"fbcover": (820, 312), "facebook": (1080, 905), "square": (1080, 1080),
 HERE = Path(__file__).resolve().parent
 
 def chrome():
-    for c in ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"] + sorted(glob.glob("/opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell")) + sorted(glob.glob("/opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell")) + sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux/chrome")) + sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux64/chrome")) + ["/usr/bin/chromium", "/usr/bin/google-chrome"]:
+    for c in ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"] + sorted(glob.glob("/opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell")) + sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux/chrome")) + ["/usr/bin/chromium", "/usr/bin/google-chrome"]:
         if os.path.exists(c):
             return c
     sys.exit("no Chrome/Chromium found")
@@ -26,7 +26,6 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--size", choices=SIZES, default="facebook")
     ap.add_argument("--set", action="append", default=[], metavar="KEY=VALUE")
-    ap.add_argument("--scale", type=int, default=2, help="device scale factor (2 = retina, default; 1 when the source photo is small and would be upscaled)")
     a = ap.parse_args()
     t = (HERE / a.template).read_text()
     f = {"LOGO_B64": (HERE / "logo.b64").read_text().strip(), "PHOTO_POS": "center"}
@@ -43,7 +42,7 @@ def main():
     with tempfile.NamedTemporaryFile("w", dir=HERE, suffix=".html", delete=False) as fh:
         fh.write(t); tmp = Path(fh.name)
     try:
-        r = subprocess.run([chrome(), "--headless", "--no-sandbox", "--disable-gpu", "--hide-scrollbars", f"--force-device-scale-factor={a.scale}", f"--window-size={w},{h}", "--virtual-time-budget=3000", f"--screenshot={out}", tmp.as_uri()], capture_output=True, text=True)
+        r = subprocess.run([chrome(), "--headless", "--no-sandbox", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=2", f"--window-size={w},{h}", "--virtual-time-budget=3000", f"--screenshot={out}", tmp.as_uri()], capture_output=True, text=True)
         if r.returncode != 0 or not out.exists():
             sys.exit("chrome render failed:\n" + r.stderr[-800:])
     finally:
