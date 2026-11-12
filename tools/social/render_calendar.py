@@ -23,7 +23,7 @@ PHOTO_ROOT = ROOT / "tools" / "photos"
 PHOTO_DIRS = [PHOTO_ROOT / d for d in ("space-people", "space-empty", "meeting-room", "call-room",
                                        "event-space", "loft-and-found", "members", "stock")]
 LOG = ROOT / "tools" / "posted-log.csv"
-TEMPLATES = {"photo": "template-spotlight.html", "green": "template-spotlight-green.html", "slate": "template-spotlight-slate.html"}
+TEMPLATES = {"photo": "template-spotlight.html", "green": "template-spotlight-green.html", "slate": "template-spotlight-slate.html", "vivid": "template-spotlight-vivid.html"}
 HEAD_MAX, SUB_MAX = 26, 55        # chars per line (brand MD §9 / voice-guide)
 REUSE_DAYS = 14                   # hard rule (Dave 2026-09-21): no background photo twice within two weeks
 SIZES = ["facebook", "square", "portrait", "story", "link", "landscape"]
@@ -137,7 +137,7 @@ def main():
     ap.add_argument("--campaign", required=True, help="campaign folder name, e.g. 2026-10-12-cycle (created at the repo root)")
     ap.add_argument("--size", default="facebook", choices=SIZES)
     ap.add_argument("--rows", help="comma-separated 1-based row numbers to render (default all)")
-    ap.add_argument("--style", choices=["photo", "green", "slate"], help="force a style for every row (default: the row's Style column, else photo)")
+    ap.add_argument("--style", choices=["photo", "green", "slate", "vivid"], help="force a style for every row (default: the row's Style column, else photo)")
     ap.add_argument("--no-reuse-check", action="store_true", help="skip the 14-day photo reuse guard (re-renders of an approved cycle)")
     a = ap.parse_args()
 
@@ -174,7 +174,7 @@ def main():
         date = g(c_date) or f"row{n}"
         head, sub, cap = g(c_head), g(c_sub), g(c_cap)
         photo_name = g(c_photo) or "loft_gradient.png"
-        style = a.style or ("green" if "green" in g(c_style).lower() else "slate" if "slate" in g(c_style).lower() else "photo")
+        style = a.style or next((k for k in ("vivid", "green", "slate") if k in g(c_style).lower()), "photo")
         lines = headline_lines(head, n, warnings)
         if not sub and c_sub is None:
             sub = split_sentences(cap)[0] if cap else ""
@@ -197,7 +197,7 @@ def main():
                "--set", "HEADLINE=" + "<br>".join(esc(l) for l in lines),
                "--set", "SUBLINE=" + esc(sub),
                "--set", "PHOTO=" + str(photo),
-               "--set", "PHOTO_POS=" + (g(c_pos) or "center")]
+               "--set", "PHOTO_POS=" + (g(c_pos) or "center"), "--set", "PHOTO_SIZE=cover"]
         res = subprocess.run(cmd, capture_output=True, text=True)
         if res.returncode != 0:
             sys.exit(f"row {n} failed:\n{res.stdout}\n{res.stderr}")
