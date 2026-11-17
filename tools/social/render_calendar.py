@@ -24,7 +24,7 @@ PHOTO_DIRS = [PHOTO_ROOT / d for d in ("space-people", "space-empty", "meeting-r
                                        "event-space", "loft-and-found", "members", "stock")]
 LOG = ROOT / "tools" / "posted-log.csv"
 TEMPLATES = {"photo": "template-spotlight.html", "green": "template-spotlight-green.html", "slate": "template-spotlight-slate.html", "vivid": "template-spotlight-vivid.html"}
-HEAD_MAX, SUB_MAX = 26, 55        # chars per line (brand MD §9 / voice-guide)
+HEAD_MAX, SUB_MAX = 22, 55        # chars per line (brand MD §9 / voice-guide)
 REUSE_DAYS = 14                   # hard rule (Dave 2026-09-21): no background photo twice within two weeks
 SIZES = ["facebook", "square", "portrait", "story", "link", "landscape"]
 

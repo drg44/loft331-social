@@ -25,7 +25,7 @@ Sizes: facebook 1080×905 (default) · square 1080×1080 · portrait 1080×1350 
 ## One image
     cd tools/social
     python3 render.py template-spotlight.html --size link --out ../../site-assets/<page>/og.png \
-      --set "HEADLINE=Line one, max 26 chars.<br>Line two, max 26 chars." \
+      --set "HEADLINE=Line one, max 22 chars.<br>Line two, max 22 chars." \
       --set "SUBLINE=Max 2 x 55 chars, plain speech." \
       --set PHOTO=../photos/loft-and-found/lf-mingling-1.jpg [--set "PHOTO_POS=left"]
 
@@ -38,5 +38,5 @@ Sizes: facebook 1080×905 (default) · square 1080×1080 · portrait 1080×1350 
     # HARD RULE: every post is a DRAFT (saveToDraft:true, mode customScheduled, dueAt in the future). Dave approves. Never shareNow.
     # re-attaching a changed image: bump ?v=N on the URL or Buffer keeps its cached copy.
 
-Rules that bite: no photo twice within 14 days; headline = two lines, one sentence each, ≤26 chars; logo top-left always;
+Rules that bite: no photo twice within 14 days; headline = two lines, one sentence each, ≤22 chars; logo top-left always;
 never AI images; never a plain white background; ≤2 emoji, 3–5 hashtags; prices only from the voice guide.
