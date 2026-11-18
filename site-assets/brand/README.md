@@ -9,3 +9,6 @@ It mirrors the Google Drive folder "Loft 331 Brand Assets" (dan@loft331.ca):
 A daily scheduled Claude task rebuilds it from those two folders. Do not edit by hand:
 drop files into the Drive folders instead. Format: `{"logos":[{"id","name"}],"photos":[{"id","name"}]}`,
 each list sorted by lowercase name.
+
+`previews/` holds the four 16:10 logo card previews the page shows (g_inv = green, g = white on green,
+b = black, w = white). Each is the designer's horizontal JPG centred on its own background colour, unaltered.
